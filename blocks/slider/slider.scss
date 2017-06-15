@@ -1,0 +1,38 @@
+@import 'slider__buttons/slider__buttons';
+
+.slider {
+  width: 45%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  display: inline-block;
+  position: relative;
+  .slick-list {
+    &.draggable {
+      overflow: visible;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .slider {
+    width: 50%;
+    .slick-list {
+      &.draggable {
+        overflow: hidden;
+        padding: 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .slider {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+    width: 100%;
+  }
+}

@@ -1,0 +1,18 @@
+.status {
+  padding: 15px 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  .status__socks {
+    float: left;
+  }
+  .status__cats {
+    float: right;
+    color: #009688;
+  }
+}
+
+@media (max-width: 480px) {
+  .status {
+    font-size: 14px;
+  }
+}

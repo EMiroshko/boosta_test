@@ -1,0 +1,25 @@
+.header__info {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+  .header__info_name {
+    font-weight: 800;
+    color: #f16600;
+    font-size: 20px;
+  }
+  .header__info_rating {
+    color: #009688;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__info_rating {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__info {
+    margin-left: 15px;
+  }
+}

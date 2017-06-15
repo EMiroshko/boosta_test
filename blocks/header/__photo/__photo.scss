@@ -1,0 +1,44 @@
+.header__photo {
+  display: inline-block;
+  height: 85px;
+  width: 85px;
+  vertical-align: top;
+  &.header__photo_lisa {
+    background-image: url('blocks/header/__photo/__photo_lisa.png');
+    background-position: 50% 13%;
+  }
+  &.header__photo_peter {
+    background-image: url('blocks/header/__photo/__photo_peter.png');
+    background-position: 15% 0%;
+  }
+  &.header__photo_anna {
+    background-image: url('blocks/header/__photo/__photo_anna.png');
+    background-position: 50% 13%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__photo {
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+  }
+}
+
+//Retina
+//I have not photos in large resolution to adapt it to retina. But if I had, I would compress it and do this:
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  &.header__photo_lisa {
+    background-image: url('blocks/header/__photo/__photo_lisa.png');
+  }
+  &.header__photo_peter {
+    background-image: url('blocks/header/__photo/__photo_peter.png');
+  }
+  &.header__photo_anna {
+    background-image: url('blocks/header/__photo/__photo_anna.png');
+  }
+}

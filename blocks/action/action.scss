@@ -1,0 +1,107 @@
+.actions {
+  padding: 25px 20px 20px;
+  font-family: 'Open Sans', sans-serif;
+  .actions__progress {
+    float: left;
+    width: 50%;
+    color: #999;
+    .actions__progress_percent-number {
+      color: #00776a;
+      margin-right: 5px;
+      font-weight: 800;
+    }
+    .actions__progress_progress-bar {
+      height: 10px;
+      width: 100%;
+      background-color: #d9d9d9;
+      position: relative;
+      margin-top: 5px;
+      border-radius: 2px;
+      &:before {
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        background-color: #00776a;
+        border-radius: 2px 0 0 2px;
+      }
+    }
+    &.actions__progress_lisa {
+      .actions__progress_progress-bar {
+        &:before {
+          width: 26%;
+        }
+      }
+    }
+    &.actions__progress_peter {
+       .actions__progress_progress-bar {
+         &:before {
+           width: 60%;
+         }
+       }
+     }
+    &.actions__progress_anna {
+      .actions__progress_progress-bar {
+        &:before {
+          width: 51%;
+        }
+      }
+    }
+  }
+  .actions__submit-button {
+    float: right;
+    padding: 8px 18px;
+    background-color: #ff7b1a;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-weight: 800;
+  }
+}
+
+@media (max-width: 1100px) {
+  .actions {
+    .actions__submit-button {
+      float: none;
+      display: block;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .actions__progress {
+      float: none;
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .actions {
+    .actions__submit-button {
+      float: right;
+      display: block;
+      margin-top: 0;
+    }
+    .actions__progress {
+      float: left;
+      display: block;
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .actions {
+    .actions__submit-button {
+      float: none;
+      display: block;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .actions__progress {
+      float: none;
+      display: block;
+      width: 100%;
+    }
+  }
+}

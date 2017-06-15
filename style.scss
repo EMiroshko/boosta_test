@@ -1,0 +1,13 @@
+@import 'blocks/clearfix/clearfix';
+@import 'blocks/divider/divider';
+@import 'blocks/page-wrapper/page-wrapper';
+@import 'blocks/slider/slider';
+@import 'blocks/profile/profile';
+@import 'blocks/header/header';
+@import 'blocks/status/status';
+@import 'blocks/action/action';
+
+body {
+  background-color: #ddd;
+  min-width: 320px;
+}
